@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --charcoal: #1a1a1a;
+  --charcoal-card: #282828;
+  --grey-text: #cccccc;
+  --accent: #ffa500;
+  --accent-hover: #ffb733;
+}
+
+body {
+  background-color: var(--charcoal);
+  color: #ffffff;
+}
+
+/* Smooth scroll and focus styles */
+html {
+  scroll-behavior: smooth;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Carousel arrow buttons */
+.carousel-arrow {
+  @apply absolute top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-accent hover:bg-accent-hover text-charcoal flex items-center justify-center transition-colors z-10;
+}

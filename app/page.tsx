@@ -11,8 +11,6 @@ const YOUR_NAME = "Shyhrete Buzaku";
 // Intro line — edit to match your focus. Examples:
 // "I build web and mobile products. Here's a selection of my recent work."
 // "I design and build experiences for the web and for mobile. Below are some projects I've shipped."
-const INTRO_TEXT =
-  "I build modern WEB apps and cross-platform mobile apps. Here's a selection of my recent work.";
 
 export default function Home() {
   const [category, setCategory] = useState<ProjectCategory>("websites");
@@ -25,20 +23,23 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <p className="text-grey-text text-sm uppercase tracking-wider mb-2">
           Portfolio
         </p>
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           <span className="text-accent">{YOUR_NAME}</span>
         </h1>
+        <p className="text-grey-text text-base md:text-lg max-w-2xl">
+          I build modern WEB apps and cross-platform mobile apps.
+        </p>
         <p className="text-grey-text text-base md:text-lg max-w-2xl mb-10">
-          {INTRO_TEXT}
+           Here's a selection of my recent work.
         </p>
 
         <CategoryTabs active={category} onChange={setCategory} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {filteredProjects.map((project) => (
             <ProjectCard
               key={project.id}

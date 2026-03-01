@@ -18,6 +18,20 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
+      keyframes: {
+        "slide-fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "slide-in-right": {
+          "0%": { opacity: "0", transform: "translateX(12px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        "slide-fade-in": "slide-fade-in 0.6s ease-in-out",
+        "slide-in-right": "slide-in-right 0.4s ease-out",
+      },
     },
   },
   plugins: [],

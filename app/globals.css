@@ -32,5 +32,5 @@ html {
 
 /* Carousel arrow buttons */
 .carousel-arrow {
-  @apply absolute top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-accent hover:bg-accent-hover text-charcoal flex items-center justify-center transition-colors z-10;
+  @apply absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-accent hover:bg-accent-hover text-charcoal flex items-center justify-center transition-colors z-10;
 }

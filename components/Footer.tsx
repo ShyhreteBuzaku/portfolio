@@ -1,15 +1,14 @@
 const CURRENT_YEAR = new Date().getFullYear();
-const YOUR_NAME = "Your Name";
+const YOUR_NAME = "Shyhrete Buzaku";
 const FOOTER_LINKS = [
-  { label: "GitHub", href: "https://github.com/yourusername" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/yourusername" },
-  { label: "Contact", href: "mailto:you@example.com" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/shyhrete-buzaku-a3386615b/" },
+  { label: "Contact", href: "mailto:shyhretebuzaku@gmail.com" },
 ];
 
 export function Footer() {
   return (
     <footer className="border-t border-white/5 mt-16">
-      <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-grey-text">
           © {CURRENT_YEAR} {YOUR_NAME}
         </p>

@@ -2,14 +2,13 @@
 
 const SITE_NAME = "Portfolio";
 const NAV_LINKS = [
-  { label: "Contact", href: "mailto:you@example.com" },
-  { label: "GitHub", href: "https://github.com/yourusername" },
+  { label: "Contact", href: "mailto:shyhretebuzaku@gmail.com" },
 ];
 
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-charcoal/95 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
         <a
           href="#"
           className="text-sm font-medium text-white hover:text-accent transition-colors"

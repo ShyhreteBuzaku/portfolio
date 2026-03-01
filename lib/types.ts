@@ -10,5 +10,7 @@ export interface Project {
   images: string[];
   websiteUrl?: string;
   githubUrl?: string;
+  appStoreUrl?: string;
+  playStoreUrl?: string;
   otherLinks?: { label: string; url: string }[];
 }

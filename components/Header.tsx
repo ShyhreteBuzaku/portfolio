@@ -2,6 +2,7 @@
 
 const SITE_NAME = "Portfolio";
 const NAV_LINKS = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/shyhrete-buzaku-a3386615b/" },
   { label: "Contact", href: "mailto:shyhretebuzaku@gmail.com" },
 ];
 
